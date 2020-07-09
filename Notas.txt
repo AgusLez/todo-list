@@ -1,0 +1,20 @@
+const main: componente funcional (buscar definicion)
+
+LOS COMPONENTES COMIENZAN CON MAYUSCULA
+
+export: permite exportar cosas a otros archivos
+
+destructuracion de objetos (buscar)
+
+onClick y onChange (buscar) = EVENTOS
+
+no se puede sobrescribir una constante, si se puede re declarar (buscar const javascript) 
+
+setList([...list,list]) pasame todo lo que tiene list y task 
+
+.map= recorre el array y ejecuta el codigo que le pases
+
+renderizar= como se cargan las cosas en la pagina
+
+truthy expression= se componen de dos partes una verdadera o falsa y un codigo ejecutar. se usa para renderizar cosas. lo que hace es evalua si la primera condicion es v o f y si es verdadero ejecuta el codigo, si es falso devuelve false.
+(expression)&&(lo que quiero renderizar) 
