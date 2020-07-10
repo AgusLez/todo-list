@@ -1,9 +1,9 @@
 .main{
   text-align: center;
   box-sizing: border-box;
-  background-color: #eff1f3;
+  background-color: #fcfffd;
   border-radius: 7px;
-  width: 100%;
+  width: 450px;
   padding: 25px;
   box-shadow: 9px 12px 61px -25px rgba(0,0,0,0.75);
 }
