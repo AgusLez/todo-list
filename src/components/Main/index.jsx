@@ -1,10 +1,10 @@
 import React from "react";
 import Task from "../Task";
-
+import "./index.css"
 
 const Main = () => {
     return (
-        <div>
+        <div className="main">
             <h1>Tareas</h1>
             <Task/>
         </div>

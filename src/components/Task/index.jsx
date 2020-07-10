@@ -17,19 +17,21 @@ const Task = () => {
     console.log(list)
 
     return (
-        <div className="hola">
-            <form>
-                <input
+        <div className="mainContainer">
+            <form className="formContainer">
+                <input 
+                    className="input"
                     type="text"
                     onChange={handleChange}
                 />
                 <button
+                    className="button"
                     onClick={handleClick}
                 >
-                    Agregar
+                    +
                 </button>
             </form>
-            <ul>
+            <ul className="taskContainer">
                 {
                     (list.length > 0) && (
                         list.map(item => <TaskList task={item} />)

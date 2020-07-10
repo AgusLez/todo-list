@@ -1,3 +1,32 @@
-.hola{
-    background-color: thistle;
+.mainContainer {
+    text-align: center;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.taskContainer {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid rgb(194, 194, 194);
+    background: none;
+    outline: none;
+    font-size: 25px;
+}
+
+.button {
+    border: none;
+    background-color: #be93c5;
+    color: honeydew;
+    outline: none;
+    font-size:35px;
+    padding: 0 10px;
 }
