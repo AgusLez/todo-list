@@ -1,4 +1,4 @@
-const main: componente funcional (buscar definicion)
+const main: componente funcional (son funciones de javascript)
 
 LOS COMPONENTES COMIENZAN CON MAYUSCULA
 
@@ -6,9 +6,11 @@ export: permite exportar cosas a otros archivos
 
 destructuracion de objetos (buscar)
 
-onClick y onChange (buscar) = EVENTOS
+onClick Pinchar y soltar el ratón
+onChange 	Deseleccionar un elemento que se ha modificado
+= EVENTOS
 
-no se puede sobrescribir una constante, si se puede re declarar (buscar const javascript) 
+no se puede sobrescribir una constante, si se puede re declarar (https://medium.com/@tatymolys/var-let-y-const-donde-cuando-y-por-qu%C3%A9-d4a0ee66883b) 
 
 setList([...list,list]) pasame todo lo que tiene list y task 
 
@@ -18,3 +20,5 @@ renderizar= como se cargan las cosas en la pagina
 
 truthy expression= se componen de dos partes una verdadera o falsa y un codigo ejecutar. se usa para renderizar cosas. lo que hace es evalua si la primera condicion es v o f y si es verdadero ejecuta el codigo, si es falso devuelve false.
 (expression)&&(lo que quiero renderizar) 
+
+“key” es un atributo especial string que debes incluir al crear listas de elementos.Las keys ayudan a React a identificar que ítems han cambiado, son agregados, o son eliminados. Las keys deben ser dadas a los elementos dentro del array para darle a los elementos una identidad estable.
