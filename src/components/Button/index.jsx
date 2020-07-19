@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Button = ({ isComplete, onClick }) => {
   return (
     <button className="icon">
-      {(isComplete === true) ? (
+      {(isComplete) ? (
         <FontAwesomeIcon icon={faCheck} className="check-button" onClick={onClick} />
       ) : (
           <FontAwesomeIcon icon={faTrash} className="delete-button" onClick={onClick} />

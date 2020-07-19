@@ -12,7 +12,7 @@ onChange 	Deseleccionar un elemento que se ha modificado
 
 no se puede sobrescribir una constante, si se puede re declarar (https://medium.com/@tatymolys/var-let-y-const-donde-cuando-y-por-qu%C3%A9-d4a0ee66883b) 
 
-setList([...list,list]) pasame todo lo que tiene list y task 
+setList([...list,task]) pasame todo lo que tiene list y task 
 
 .map= recorre el array y ejecuta el codigo que le pases
 
