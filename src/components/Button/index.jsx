@@ -1,19 +1,18 @@
 import React from "react";
-import "./index.css"
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "./index.css";
+import { faCheck, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Button = ({isComplete}) => {
+const Button = ({ isComplete, onClick }) => {
   return (
     <button className="icon">
       {(isComplete === true) ? (
-        <svg className="check-button" src={require("../../Icons/checkmark.svg")} alt="complete"/>
+        <FontAwesomeIcon icon={faCheck} className="check-button" onClick={onClick} />
       ) : (
-        <img className="delete-button" src={require("../../Icons/trashcan.svg")} alt="delete"/>
-        //<span style="font-size: 3em; color: Tomato;"><i className="fas fa-trash"></i></span>
-      )}
+          <FontAwesomeIcon icon={faTrash} className="delete-button" onClick={onClick} />
+        )}
     </button>
   )
 }
 
 export default Button
-

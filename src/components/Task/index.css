@@ -22,14 +22,6 @@
 
 }
 
-.taskList {
-    background-color: rgb(235, 235, 235);
-    padding: 8px;
-    margin: 3%;
-    display: flex;
-    justify-content: space-between;
-}
-
 .input {
     border: none;
     border-bottom: 1px solid rgb(194, 194, 194);

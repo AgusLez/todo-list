@@ -9,18 +9,24 @@ const Task = () => {
     const handleInput = (e) => {
         setTask(e.target.value)
     }
+
     const addTask = (e) => {
-        e.preventDefault()
-        setList([...list, task])
-        setTask("")
+        if (task === "") {
+            e.preventDefault()
+            return
+        } else {
+            e.preventDefault()
+            setList([...list, task])
+            setTask("")
+        }
     }
-    const handleDelete = () => setList([]) 
-    console.log(list)
+    const handleDelete = () => setList([])
+
     return (
         <div className="mainContainer">
             <form className="formContainer">
                 <input
-                    value={task} 
+                    value={task}
                     className="input"
                     type="text"
                     placeholder="Escribí una tarea"
@@ -35,17 +41,17 @@ const Task = () => {
             </form>
             <ul className="taskContainer">
                 {
-                   (list.length > 0) ? (
-                        list.map((task,i) => <TaskList task={task} key={i} />)
-                    ) : 
-                    (
-                        <div className="emptyTask">
-                            <img src={require("../../Icons/fantasmita.png")} alt="fantasmita"/> 
-                            <p>Todavía no hay tareas!</p>
-                        </div>
-                    )    
+                    (list.length > 0) ? (
+                        list.map((task, i) => <TaskList task={task} key={i} />)
+                    ) :
+                        (
+                            <div className="emptyTask">
+                                <img src={require("../../Icons/ghost.png")} alt="Fantasma" />
+                                <p>Todavía no hay tareas!</p>
+                            </div>
+                        )
                 }
-                
+
             </ul>
 
             <button
@@ -53,11 +59,11 @@ const Task = () => {
                 onClick={handleDelete}>
                 Eliminar todo
             </button>
-             
+
 
         </div>
     )
-} 
+}
 
 
 export default Task 
